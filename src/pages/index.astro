@@ -1,5 +1,14 @@
 ---
+import Experience from '../components/Experience/Experience.astro';
+import Header from '../components/Header.astro';
+import Home from '../components/Home.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout />
+<Layout >
+<Header />
+		<main>
+			<Home />
+			<Experience />
+		</main>
+</Layout>

@@ -1,7 +1,4 @@
 ---
-import Header from '../components/Header.astro';
-import Home from '../components/Home.astro';
-
 import '../styles/global.css';
 ---
 
@@ -24,12 +21,6 @@ import '../styles/global.css';
 
 	</head>
 	<body class="bg-blanco-principal text-texto-generico transition-colors duration-500 pt-20 scroll-smooth">
-		<!-- Header + Sections included here so pages using this layout get the full single-page content -->
-		<Header />
-		<main>
-			<Home />
-		</main>
-
 		<slot />
 	</body>
 </html>
