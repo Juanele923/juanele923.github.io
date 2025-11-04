@@ -37,19 +37,17 @@
   </div>
 </header>
 <style>
-			/* Small replacement for the original tailwind @layer styles (keeps underline animation)
-				 Uses the same purple used in the original config (#5757e0) */
-			.nav-link-underline { position: relative; }
-			.nav-link-underline::after {
-				content: "";
-				display: block;
-				height: 2px;
-				width: 0;
-				margin: 0 auto;
-				background-color: #5757e0;
-				position: absolute;
-				bottom: -1px;
-				transition: width 0.5s;
-			}
-			.nav-link-underline:hover::after { width: 100%; }
-		</style>
+  .nav-link-underline { position: relative; }
+  .nav-link-underline::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    margin: 0 auto;
+    background-color: #5757e0;
+    position: absolute;
+    bottom: -1px;
+    transition: width 0.5s;
+  }
+  .nav-link-underline:hover::after { width: 100%; }
+</style>

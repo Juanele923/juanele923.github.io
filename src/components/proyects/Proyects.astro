@@ -1,0 +1,37 @@
+---
+import ProyectsItem from "./ProyectsItem.astro";
+
+---
+<section class="Projects pb-20 min-h-screen scroll-mt-16" id="proyectos">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-5xl font-extrabold text-center mb-16">Mis Proyectos</h2>
+
+        <div class="grid grid-cols-2 gap-8">
+        
+            <ProyectsItem
+                img= "../../../public/img/creacion.jpg"
+                title="Creación de Páginas Web"
+                alt="Proyecto creación de páginas web"
+                description="Diseño y desarrollo de sitios web modernos, optimizados para SEO y adaptables a dispositivos móviles."
+            />
+            <ProyectsItem
+                img= "../../../public/img/mantenimiento.jpg"
+                title="Mantenimiento Web"
+                alt="Proyecto mantenimiento web"
+                description="Gestión y mantenimiento de sitios web para garantizar rendimiento, seguridad y actualizaciones constantes."
+            />
+            <ProyectsItem
+                img= "../../../public/img/plesk.jpg"
+                title="Hosting y Migración"
+                alt="Proyecto hosting y migración"
+                description="Implementación de soluciones de hosting y migración de sitios con paneles de control como Plesk."
+            />
+            <ProyectsItem
+                img= "../../../public/img/appweb.jpg"
+                title="Desarrollo de Aplicaciones Móviles Híbridas"
+                alt="Proyecto aplicación móvil híbrida"
+                description="Desarrollo de apps híbridas con frameworks como React-Native, integrando funcionalidades web y móviles."
+            />
+        </div>
+    </div>
+</section>
