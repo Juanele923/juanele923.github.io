@@ -1,0 +1,18 @@
+[
+    {
+        "img": "../../../public/img/Vedruna-logo.png",
+        "alt": "Vedruna-logo",
+        "date": "2024 - 2026",
+        "nameCourse": "Desarrollador de Aplicaciones Web",
+        "city": "Sevilla",
+        "description": "Técnico superior DAW con capacidad para crear aplicaciones web full-stack. Sólido manejo de tecnologías front-end y back-end, incluyendo maquetación, interactividad, servidor y bases de datos."
+    },
+    {
+        "img": "../../../public/img/Atrium-logo.png",
+        "alt": "Atrium-logo",
+        "date": "2023",
+        "nameCourse": "Desarrollador Full-Stack",
+        "city": "Madrid - Remoto",
+        "description": "Desarrollo de sitios web para diversos clientes en GuadalTech Soluciones Tecnológicas. Uso de tecnologías como HTML5, CSS3, JavaScript, Angular, WordPress y Elementor para crear interfaces atractivas e interactivas."
+    }
+]

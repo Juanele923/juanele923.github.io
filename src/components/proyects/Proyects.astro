@@ -1,0 +1,15 @@
+---
+import ProyectsItem from "./ProyectsItem.astro";
+import proyects from "../../assets/mocks/proyects.json";
+---
+<section class="Projects pb-20 min-h-screen scroll-mt-16" id="proyectos">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-5xl font-extrabold text-center mb-16">Mis Proyectos</h2>
+
+        <div class="grid grid-cols-2 gap-8">
+            {proyects.map((dato) => (
+                <ProyectsItem dato={dato} />
+            ))}
+        </div>
+    </div>
+</section>

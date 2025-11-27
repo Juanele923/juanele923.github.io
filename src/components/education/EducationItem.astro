@@ -1,0 +1,22 @@
+---
+interface Dato {
+img: string;
+alt: string;
+date: string;
+nameCourse: string;
+city: string;
+description: string;
+}
+const { dato } = Astro.props as { dato: Dato };
+---
+<div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+    <div class="p-8 flex flex-col items-center text-center">
+        <img src={dato.img} alt={dato.alt} class="w-28 h-28 object-contain mb-6">
+        <h3 class="text-lg font-semibold mb-1">{dato.date}</h3>
+        <h4 class="text-xl font-semibold text-color-rojo mb-2">{dato.nameCourse}</h4>
+        <p class="text-gray-600 font-medium tracking-wider mb-3">{dato.city}</p>
+        <p class="text-gray-700 leading-relaxed">
+        {dato.description}
+        </p>
+    </div>
+</div>
