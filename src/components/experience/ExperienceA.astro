@@ -1,5 +1,13 @@
 ---
-const {puesto, fecha, descripcion, img, alt} = Astro.props;
+interface Dato {
+puesto: string;
+fecha: string;
+descripcion: string;
+img: string;
+alt: string;
+}
+
+const { dato } = Astro.props as { dato: Dato };
 ---
 
 
@@ -7,15 +15,15 @@ const {puesto, fecha, descripcion, img, alt} = Astro.props;
     <div class="w-1/2 p-5">
         <div class="text-right">
             <h3 class="text-2xl font-semibold mb-2">
-                <span class="text-color-rojo">{puesto}</span>
+                <span class="text-color-rojo">{dato.puesto}</span>
             </h3>
-            <h3 class="text-lg font-semibold mb-1 text-gray-600">{fecha}</h3>
+            <h3 class="text-lg font-semibold mb-1 text-gray-600">{dato.fecha}</h3>
             <p class="text-base leading-relaxed mb-4">
-                {descripcion}
+                {dato.descripcion}
             </p>
         </div>
     </div>
     <div class="w-1/2 flex">
-        <img src={img} alt={alt} class="max-w-full w-48 mr-auto">
+        <img src={dato.img} alt={dato.alt} class="max-w-full w-48 mr-auto">
     </div>
 </div>

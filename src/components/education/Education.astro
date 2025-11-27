@@ -1,5 +1,6 @@
 ---
 import EducationItem from "./EducationItem.astro";
+import education from "../../assets/mocks/education.json";
 
 ---
 <section class="educacion pb-20 min-h-screen scroll-mt-16" id="educacion">
@@ -8,23 +9,9 @@ import EducationItem from "./EducationItem.astro";
     
     <div class="grid grid-cols-2 gap-10">
 
-        <EducationItem
-            img= "../../../public/img/Vedruna-logo.png"
-            alt="Vedruna-logo"
-            date="2024 - 2026"
-            nameCourse="Desarrollador de Aplicaciones Web"
-            city="Sevilla"
-            description="Técnico superior DAW con capacidad para crear aplicaciones web full-stack. Sólido manejo de tecnologías front-end y back-end, incluyendo maquetación, interactividad, servidor y bases de datos."
-        />
-
-        <EducationItem
-            img= "../../../public/img/Atrium-logo.png"
-            alt="Atrium-logo"
-            date="2023"
-            nameCourse="Desarrollador Full-Stack"
-            city="Madrid - Remoto"
-            description="Desarrollo de sitios web para diversos clientes en GuadalTech Soluciones Tecnológicas. Uso de tecnologías como HTML5, CSS3, JavaScript, Angular, WordPress y Elementor para crear interfaces atractivas e interactivas."
-        />
+      {education.map((dato) => (
+        <EducationItem dato={dato} />
+      ))}
 
     </div>
   </div>
