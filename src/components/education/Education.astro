@@ -1,18 +1,16 @@
 ---
 import EducationItem from "./EducationItem.astro";
 import education from "../../assets/mocks/education.json";
-
 ---
-<section class="educacion pb-20 min-h-screen scroll-mt-16" id="educacion">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-5xl font-extrabold text-center mb-16">Educación</h2>
-    
-    <div class="grid grid-cols-2 gap-10">
 
+<section class="educacion py-16 min-h-screen scroll-mt-14 md:scroll-mt-20" id="educacion">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-extrabold text-center mb-10 sm:text-5xl sm:mb-16">Educación</h2>
+    
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10">
       {education.map((dato) => (
         <EducationItem dato={dato} />
       ))}
-
     </div>
   </div>
 </section>

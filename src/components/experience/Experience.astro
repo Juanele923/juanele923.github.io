@@ -4,19 +4,15 @@ import ExperienceB from "./ExperienceB.astro";
 import experience from "../../assets/mocks/experience.json";
 ---
 
-<section class="experiencias pb-16 min-h-screen scroll-mt-16" id="experiencia">
+<section class="experiencias py-16 min-h-screen scroll-mt-14 md:scroll-mt-20" id="experiencia">
     <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-5xl font-extrabold text-center mb-16">Experiencia</h2>
+        <h2 class="text-3xl font-extrabold text-center mb-10 sm:text-5xl sm:mb-16">Experiencia</h2>
         {experience.map((exp, index) => (
             <>
                 {index % 2 === 0 ? (
-                    <ExperienceA
-                        dato={exp}
-                    />
+                    <ExperienceA dato={exp} />
                 ) : (
-                    <ExperienceB
-                        dato={exp}
-                    />
+                    <ExperienceB dato={exp} />
                 )}
             </>
         ))}

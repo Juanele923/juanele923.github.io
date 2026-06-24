@@ -3,17 +3,15 @@ import SkillsItem from "./SkillsItem.astro";
 import skills from "../../assets/mocks/skills.json";
 ---
 
-<section class="section-skill pb-20 min-h-screen scroll-mt-16" id="skills">
+<section class="section-skill py-16 min-h-screen scroll-mt-14 md:scroll-mt-20" id="skills">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-5xl font-extrabold text-center mb-16">Skills</h2>
+    <h2 class="text-3xl font-extrabold text-center mb-10 sm:text-5xl sm:mb-16">Skills</h2>
 
     <div class="flex justify-center">
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-10 gap-x-10 w-full max-w-4xl">
-
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-10 gap-x-8 md:gap-x-10 w-full max-w-4xl">
         {skills.map((dato) => (
           <SkillsItem dato={dato} />
         ))}
-        
       </div>
     </div>
   </div>

@@ -1,17 +1,16 @@
 [
-    {
-        "puesto":"Desarrollador web - Soltel",
-        "fecha":"Abril 2025 - Junio 2025",
-        "descripcion":"Durante mis 2 meses de prácticas, participé en el desarrollo de software con Java y Spring. Colaboré en la integración de datos y la configuración del entorno, aportando a la resolución de bugs e implementando tareas asignadas.",
-        "img":"./public/img/Soltel.png",
-        "alt":"Soltel-logo"
-    },
-    {
-        "puesto":"Desarrollador web - Guadaltech",
-        "fecha":"Enero 2023 - Noviembre 2023",
-        "descripcion":"Como desarrollador web en GuadalTech Soluciones Tecnológicas, me dediqué al desarrollo de sitios web para clientes de diversos sectores, utilizando tecnologías como HTML5, CSS3, JavaScript, Angular, WordPress y Elementor para crear interfaces interactivas y atractivas.",
-        "img": "./public/img/Guadaltech.png",
-        "alt": "GuadalTech"
-    }
-
+  {
+    "puesto": "Desarrollador web - Soltel",
+    "fecha": "Abril 2025 - Junio 2025 · Febrero 2026 - Actualidad",
+    "descripcion": "Tras completar mis prácticas, me reincorporé al equipo en febrero de 2026 como desarrollador web. Trabajo en el desarrollo de software con Java y Spring, colaborando en integraciones, configuración de entornos, resolución de incidencias y evolución de funcionalidades.",
+    "img": "/img/Soltel.png",
+    "alt": "Soltel-logo"
+  },
+  {
+    "puesto": "Desarrollador web - Guadaltech",
+    "fecha": "Enero 2023 - Noviembre 2023",
+    "descripcion": "Como desarrollador web en GuadalTech Soluciones Tecnológicas, me dediqué al desarrollo de sitios web para clientes de diversos sectores, utilizando tecnologías como HTML5, CSS3, JavaScript, Angular, WordPress y Elementor para crear interfaces interactivas y atractivas.",
+    "img": "/img/Guadaltech.png",
+    "alt": "GuadalTech"
+  }
 ]
