@@ -2,11 +2,12 @@
 import ProyectsItem from "./ProyectsItem.astro";
 import proyects from "../../assets/mocks/proyects.json";
 ---
-<section class="Projects pb-20 min-h-screen scroll-mt-16" id="proyectos">
-    <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-5xl font-extrabold text-center mb-16">Mis Proyectos</h2>
 
-        <div class="grid grid-cols-2 gap-8">
+<section class="Projects py-16 min-h-screen scroll-mt-14 md:scroll-mt-20" id="proyectos">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-extrabold text-center mb-10 sm:text-5xl sm:mb-16">Mis Proyectos</h2>
+
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
             {proyects.map((dato) => (
                 <ProyectsItem dato={dato} />
             ))}

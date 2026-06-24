@@ -1,148 +1,88 @@
-# 🚀 Portafolio Profesional & CV Interactivo
-## Desarrollo de Aplicaciones Web (DAW)
-### Alumno: Juan López
+# Portfolio Personal - Juan Lopez
 
----
+Portfolio profesional desarrollado con Astro y Tailwind CSS para presentar mi perfil como desarrollador web, experiencia laboral, formacion, habilidades, proyectos y datos de contacto.
 
-## 📖 Índice
+## Descripcion
 
-1.  [Introducción](#-introducción)
-2.  [Funcionalidades y Tecnologías](#-funcionalidades-y-tecnologías)
-3.  [Guía de Instalación](#-guía-de-instalación)
-4.  [Guía de Uso](#-guía-de-uso)
-5.  [Diseño en Figma](#-diseño-en-figma)
-6.  [Conclusión](#-conclusión)
-7.  [Contribuciones y Agradecimientos](#-contribuciones-y-agradecimientos)
-8.  [Licencia](#-licencia)
-9.  [Contacto](#-contacto)
+Este sitio funciona como carta de presentacion digital y CV interactivo. Esta orientado a mostrar de forma clara mi trayectoria profesional, mis conocimientos tecnicos y algunos de los servicios o areas de trabajo en los que tengo experiencia.
 
----
+El proyecto esta construido como una web estatica optimizada, preparada para desplegarse en GitHub Pages.
 
-## 📝 Introducción
+## Caracteristicas
 
-### Descripción del Proyecto
-Este proyecto consiste en el desarrollo de un portafolio web personal y currículum vitae interactivo. Es una plataforma moderna y optimizada diseñada para presentar mi perfil profesional, experiencia laboral, formación académica y proyectos destacados de una manera visualmente atractiva y accesible.
+- Diseno responsive para movil, tablet y escritorio.
+- Modo claro y modo oscuro con preferencia guardada en el navegador.
+- Menu hamburguesa en version movil.
+- Navegacion por secciones con scroll suave.
+- Secciones modulares para experiencia, proyectos, educacion, skills y contacto.
+- Descarga directa del CV desde la web.
+- Despliegue automatizado mediante GitHub Actions.
 
-### Justificación
-En el competitivo mercado laboral actual del sector tecnológico, contar con una presencia digital sólida es fundamental. Este portafolio no solo sirve como una carta de presentación dinámica, sino que también demuestra en la práctica mis habilidades técnicas en desarrollo web frontend.
+## Tecnologias
 
-### Objetivos
-*   **Profesionalización**: Crear una identidad digital coherente y profesional.
-*   **Demostración Técnica**: Aplicar conocimientos avanzados de frameworks modernos como Astro y Tailwind CSS.
-*   **Accesibilidad y Rendimiento**: Garantizar que la web sea rápida, responsive y accesible para todos los usuarios.
+- Astro
+- Tailwind CSS
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome
+- Google Fonts
 
-### Motivación
-La motivación principal de este trabajo es consolidar los conocimientos adquiridos durante el ciclo de Desarrollo de Aplicaciones Web (DAW), explorando tecnologías de vanguardia que son tendencia en la industria, como la arquitectura de islas de Astro.
+## Estructura Principal
 
----
+```text
+src/
+  assets/mocks/       Datos de experiencia, educacion, proyectos y skills
+  components/         Componentes Astro reutilizables
+  layouts/            Layout principal del sitio
+  pages/              Paginas de Astro
+  styles/             Estilos globales
 
-## 🛠️ Funcionalidades y Tecnologías
+public/
+  arch/               CV descargable
+  img/                Imagenes e iconos publicos
 
-### Funcionalidades Principales
-*   **Navegación Fluida**: Transiciones suaves y una estructura de página única (SPA feel) o multipágina optimizada.
-*   **Diseño Responsive**: Adaptación perfecta a móviles, tablets y escritorio.
-*   **Modo Oscuro/Claro**: (Si aplica, o preparado para ello).
-*   **Secciones Modulares**: Componentes reutilizables para Experiencia, Educación y Proyectos.
-*   **Alto Rendimiento**: Carga casi instantánea gracias a la generación estática de Astro.
+.github/workflows/   Workflow de despliegue en GitHub Pages
+```
 
-### Tecnologías Utilizadas
-Este proyecto ha sido construido utilizando un stack tecnológico moderno:
+## Instalacion Local
 
-*   **[Astro](https://astro.build/) (v5.x)**: Framework principal para la arquitectura del sitio, priorizando el envío de HTML estático.
-*   **[Tailwind CSS](https://tailwindcss.com/) (v3.x)**: Framework de utilidades para un diseño rápido, consistente y personalizado.
-*   **HTML5 & CSS3**: Base semántica y estilos avanzados.
-*   **JavaScript (ES6+)**: Interactividad del lado del cliente.
-*   **Font Awesome**: Biblioteca de iconos para mejorar la interfaz de usuario.
-*   **Google Fonts**: Tipografías *Poppins* y *Open Sans* para una legibilidad óptima.
+Clona el repositorio e instala las dependencias:
 
----
+```bash
+npm install
+```
 
-## ⚙️ Guía de Instalación
+Inicia el entorno de desarrollo:
 
-Sigue estos pasos para desplegar el proyecto en tu máquina local:
+```bash
+npm run dev
+```
 
-### Prerrequisitos
-*   **Node.js** (v18 o superior).
-*   **npm** (incluido con Node.js).
+Genera la version de produccion:
 
-### Pasos
-1.  **Clonar el repositorio**:
-    ```bash
-    git clone https://github.com/VEDRUNA-DISENO-WEB/lopez_ortiz_astro_cv
-    cd lopez_ortiz_astro_cv
-    ```
+```bash
+npm run build
+```
 
-2.  **Instalar dependencias**:
-    ```bash
-    npm install
-    ```
+Previsualiza la build localmente:
 
-3.  **Ejecutar servidor de desarrollo**:
-    ```bash
-    npm run dev
-    ```
-    El sitio estará disponible en `http://localhost:4321`.
+```bash
+npm run preview
+```
 
----
+## Autor
 
-## 🚀 Guía de Uso
+Juan Lopez
 
-Una vez instalado, puedes modificar el contenido y la estructura según tus necesidades:
+- GitHub: [github.com/juanele923](https://github.com/juanele923)
+- LinkedIn: [linkedin.com/in/juan-lópez-ortiz](https://www.linkedin.com/in/juan-l%C3%B3pez-ortiz/)
+- Email: [juanele92@gmail.com](mailto:juanele92@gmail.com)
 
-*   **Editar Contenido**: Los textos y datos principales se encuentran en los componentes dentro de `src/components/`.
-*   **Personalizar Estilos**: Puedes ajustar los colores y fuentes globales en `tailwind.config.mjs`.
-*   **Añadir Páginas**: Crea nuevos archivos `.astro` en `src/pages/` para agregar nuevas rutas automáticamente.
+## Licencia y Uso
 
-### Scripts Disponibles
-*   `npm run dev`: Inicia el entorno de desarrollo.
-*   `npm run build`: Genera la versión de producción en la carpeta `dist/`.
-*   `npm run preview`: Vista previa local de la versión de producción.
+Todos los derechos reservados.
 
----
+Este proyecto, su codigo, diseno, textos, imagenes, estructura y contenido personal no pueden ser copiados, reutilizados, modificados, redistribuidos ni publicados por terceros sin autorizacion expresa y por escrito del autor.
 
-## 🎨 Diseño en Figma
-
-El diseño visual y prototipado de la interfaz se realizó previamente en Figma. Puedes consultar el diseño original aquí:
-
-👉 **[Ver Proyecto en Figma](https://www.figma.com/design/bPQBJo6Lhvhk7eVKh2joe2/Lopez_Ortiz_Juan_Tarea04_Portfolio?node-id=0-1&t=PRAbABXFyNGbO1EI-1)**
-
-
----
-
-## 🎯 Conclusión
-
-El desarrollo de este portafolio ha permitido integrar de manera efectiva el diseño de interfaces con la programación web eficiente. El uso de Astro ha resultado en un sitio web extremadamente rápido, cumpliendo con los estándares modernos de rendimiento web (Core Web Vitals). Este proyecto representa un hito importante en mi formación como desarrollador web.
-
----
-
-## 🤝 Contribuciones y Agradecimientos
-
-### Contribuciones
-Las contribuciones son bienvenidas. Si tienes sugerencias de mejora, por favor abre un *issue* o envía un *pull request*.
-
-### Agradecimientos
-*   Al equipo docente del ciclo DAW por su guía y mentoría.
-*   A la comunidad de Astro y Tailwind por su excelente documentación y recursos.
-
-### Referencias
-*   Documentación Oficial de Astro: [docs.astro.build](https://docs.astro.build)
-*   Documentación de Tailwind CSS: [tailwindcss.com](https://tailwindcss.com)
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia **MIT**. Eres libre de usarlo, modificarlo y distribuirlo para fines personales o educativos.
-
----
-
-## 📩 Contacto
-
-Si tienes alguna pregunta o quieres contactar conmigo:
-
-*   **Email**: [juanele92@hotmail.es](mailto:juanele92@hotmail.es)
-*   **LinkedIn**: [linkedin.com/in/juan-lópez-ortiz/](https://linkedin.com/in/juan-lópez-ortiz/)
-*   **GitHub**: [github.com/Juanele923](https://github.com/Juanele923)
-
----
-*Desarrollado por Juan López*
+El repositorio se publica unicamente con fines de presentacion profesional y consulta. No se concede permiso para usarlo como plantilla, base comercial, material redistribuible o recurso derivado sin consentimiento previo.

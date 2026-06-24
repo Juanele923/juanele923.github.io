@@ -15,7 +15,7 @@
         "img":"img/javascript-original.svg",
         "alt":"JavaScript",
         "nameSkill":"JavaScript",
-        "countStar":3
+        "countStar":4
     },
     {
         "img":"img/react-original.svg",
@@ -33,7 +33,7 @@
         "img":"img/java.svg",
         "alt":"Java",
         "nameSkill":"Java",
-        "countStar":2
+        "countStar":3
     },
     {
         "img":"img/mysql.svg",
